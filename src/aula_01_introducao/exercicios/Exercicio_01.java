@@ -12,7 +12,7 @@ public class Exercicio_01 {
         System.out.print("Insira seu segundo nome: ");
         String sobrenome = sc.nextLine();
 
-        System.out.print("Seu nome e sobrenome é: " + nome + " " + sobrenome);
+        System.out.print("Seu nome completo é: " + nome + " " + sobrenome);
 
         sc.close();
     }
