@@ -7,6 +7,16 @@ public class Veiculo {
     int numeroRodas;
     double velocidade;
 
+    Veiculo(){}
+
+    Veiculo(String flex, boolean b, String verde, int i, int i1) {
+        this.modelo = "";
+        this.cambioAuto = false;
+        this.cor = "";
+        this.numeroRodas = 0;
+        this.velocidade = 0;
+    }
+
     public void acelerar(double valor) {
         velocidade += valor;
     }
