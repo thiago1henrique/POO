@@ -5,6 +5,8 @@ public class Main {
         Jogos darkSouls = new Jogos("Dark Souls", 2011, "From Software");
         darkSouls.exibeInfos();
         darkSouls.review("Certamente um jogo");
+
+        System.out.println(args[0]);
     }
 
 }

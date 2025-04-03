@@ -5,13 +5,13 @@ public class Jogos {
     int ano;
     String developer;
 
-    void exibeInfos() {
+    public void exibeInfos() {
         System.out.println("Nome do jogos: " + this.nome);
         System.out.println("Ano de lançamento: " + this.ano);
         System.out.println("Developer: " + this.developer);
     }
 
-    void review(String review) {
+    public void review(String review) {
         System.out.println("A minha review é: " + review);
     }
 
