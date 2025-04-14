@@ -95,3 +95,11 @@ public class Main {
 ```
 Note que para acessar a propriedade nome e idade usamos o método ``getNome`` e ``getIdade`` <br/>
 e para modificar as mesmas utilizamos ``setNome`` e ``setIdade``. o "set" é apenas uma convenção.
+---
+### Arrays em Java
+* É uma variável composta;
+* Uma estrutura indexada;
+* Unidimensional;
+* Homogênea;
+* Também chamado de vetor;
+* Para manipular precisamos do nome do array + indice (`arrayTest[0]`)
