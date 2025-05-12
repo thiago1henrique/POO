@@ -10,5 +10,12 @@ public class Main {
 
         e1.adicionarLivro(a);
         e1.listarLivros();
+        System.out.println(a.isDisponivel());
+        a.emprestar();
+        System.out.println(a.isDisponivel());
+        a.emprestar();
+        a.devolver();
+        a.devolver();
+
     }
 }

@@ -3,6 +3,8 @@ package aula_06_exercicio;
 public class Livro {
     private String titulo;
     private String autor;
+
+    private boolean disponivel = true;
     private Editora editora;
 
     private int ano;
@@ -19,6 +21,16 @@ public class Livro {
             return this.editora.getNome();
         }
         return "Editora não informada";
+    }
+
+    public void emprestar() {
+        if(disponivel) this.disponivel = false;
+        else System.out.println("Livro fora de estoque.");
+    }
+
+    public void devolver() {
+        if(!disponivel) this.disponivel = true;
+        else System.out.println("Livro já em nosso estoque.");
     }
 
     public void setTitulo(String titulo) {
@@ -43,6 +55,14 @@ public class Livro {
 
     public String nomeEditora() {
         return editora.getNome();
+    }
+
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
     }
 
     @Override
