@@ -1,5 +1,7 @@
 package aula_06_exercicio;
 
+//1 - cadastrar livro, 2 - retirar livro etc
+
 public class Livro {
     private String titulo;
     private String autor;

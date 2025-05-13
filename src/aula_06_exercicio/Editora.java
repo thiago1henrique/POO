@@ -7,9 +7,12 @@ public class Editora {
     private String nome;
     private final ArrayList<Livro> livros;
 
-    public Editora(String nome) {
+    private Pessoa pessoa;
+
+    public Editora(String nome, Pessoa pessoa) {
         this.nome = nome;
         this.livros = new ArrayList<Livro>();
+        this.pessoa = pessoa;
     }
 
     public String getNome() {
@@ -28,7 +31,11 @@ public class Editora {
     }
 
     public void adicionarLivro(Livro livro) {
-        this.livros.add(livro);
+        if(pessoa.getCpf() != 0) {
+            this.livros.add(livro);
+        } else {
+            System.out.println("CPF invalido");
+        }
     }
 
 }
