@@ -24,18 +24,18 @@ public class Editora {
     }
 
     public void listarLivros() {
-        System.out.println("Listando livros");
-        for (Livro livro : livros) {
-            System.out.println(livro);
+        if(livros.isEmpty()) {
+            System.out.println("Sem livros cadastrados");
+        } else {
+            System.out.println("Listando livros");
+            for (Livro livro : livros) {
+                System.out.println(livro);
+            }
         }
     }
 
     public void adicionarLivro(Livro livro) {
-        if(pessoa.getCpf() != 0) {
-            this.livros.add(livro);
-        } else {
-            System.out.println("CPF invalido");
-        }
+        livros.add(livro);
     }
 
 }
