@@ -1,7 +1,5 @@
 package aula_06_exercicio;
 
-//1 - cadastrar livro, 2 - retirar livro etc
-
 public class Livro {
     private String titulo;
     private String autor;
@@ -10,6 +8,9 @@ public class Livro {
     private Editora editora;
 
     private int ano;
+
+    public Livro() {
+    }
 
     public Livro(String titulo, String autor, int ano, Editora editora) {
         this.titulo = titulo;
